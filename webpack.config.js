@@ -130,6 +130,14 @@ module.exports = {
                         ignore: ['*.DS_Store', '**/.gitkeep'],
                     },
                 },
+                {
+                    from: path.resolve(src, 'obj'),
+                    to: path.resolve(dist, 'obj'),
+                    toType: 'dir',
+                    globOptions: {
+                        ignore: ['*.DS_Store', '**/.gitkeep'],
+                    },
+                },
             ],
         }),
         //index.html
